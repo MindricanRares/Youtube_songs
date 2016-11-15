@@ -75,5 +75,5 @@ def ConfigSectionMap(section):
             print("exception on %s!" % option)
             dict1[option] = None
     return dict1
-youtube_download_playlist='https://www.youtube.com/playlist?list=PL-ozwwP5MV8atkblX43F8k-RbT58cg1_f'
+youtube_download_playlist=ConfigSectionMap('SectionOne')['playlist']
 get_list_of_songs(youtube_download_playlist)
